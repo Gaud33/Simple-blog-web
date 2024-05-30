@@ -1,0 +1,25 @@
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .add-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .blogs-display{
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  
+  h1{
+    font-size: 2em;
+  }

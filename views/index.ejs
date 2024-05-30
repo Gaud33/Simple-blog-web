@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<div class = "container">
+    <div class="row">
+        <div class = "col-md-8 col-sm=10 add-blog">
+            <h1 >Add Your Blog</h1>
+            <form  action="/add" method = "POST">
+                <label for="title">Title:</label>
+                <input type="text" name = "title"> 
+                <label for="content">Content</label>
+                <input type="text" name="content">
+                <input type="submit" value = "Submit">
+            </form>
+        </div>
+        <div class="col-10 blogs-display">
+            <h1>Blogs</h1>
+            <% if(locals.head && locals.text){ %>
+                <h2> <%= head %> </h2>
+                <p> <%= text %>  </p>
+            <% } else {  %>
+                <h1></h1>
+                <p></p>
+            <% } %>
+            
+        </div>
+    </div>
+    
+</div>
+
+<%- include("partials/footer.ejs")%>
