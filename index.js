@@ -29,7 +29,7 @@ app.get("/", (req,res)=>{
     res.render("index.ejs");
 });
 
-app.post("/add", (req, res)=>{
+app.post("/", (req, res)=>{
     res.render("index.ejs", {
         head: heading,
         text: content,
