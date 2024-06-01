@@ -15,8 +15,15 @@
         <div class="col-10 blogs-display">
             <h1>Blogs</h1>
             <% if(locals.head && locals.text){ %>
-                <h2> <%= head %> </h2>
-                <p> <%= text %>  </p>
+
+                <% for(let i = 0; i<= head.length; i++){ %>
+                    <div class = "blog-item"> 
+                        <h2> <%= head[i] %> </h2>
+                        <p>  <%= text[i] %>  </p>
+                    </div>
+
+                 <% } %>
+
             <% } else {  %>
                 <h1></h1>
                 <p></p>
