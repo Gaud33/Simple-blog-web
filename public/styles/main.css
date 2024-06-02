@@ -1,53 +1,88 @@
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+main{
+  min-height: 100vh;
+}
 
+.left-nav{
+  background-color: #343a40;
+  width: 0%;
+}
 
-  header{
-    flex-basis: 100%;
-  }
+.site-content {
+  display: flex;
+  /* min-height: 100vh; */
+  margin: 2% 8.5%;
+  /* min-width: 70%;
+  flex-grow: 1; */
+}
 
-  
+.Fields {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
 
-  .add-blog{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 5px;
-    padding: 10px;
-  }
+input[type=text] {
+  min-width: 30px;
+  margin-bottom: 2%;
+}
 
-  .blogs-display{
-    margin-top: 15px;
-    margin-left: 10px;
-  }
-  
-  h1{
-    font-size: 2em;
-  }
+input[type=text],
+select {
+  padding: 12px 20px;
+  /* display: block; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  flex: 0 1 50%;
+}
 
-  .blogs-display > h1{
-    margin-bottom: 30px;
-  }
+input[type=submit] {
+  width: 20%;
+  margin-top: 2%;
+}
 
-  .blog-item{
-    margin: 10px 0px;
-  }
+.container-fluid {
+  width: 80%;
+}
 
-  .nav-title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+label {
+  display: block;
+}
 
-  .nav-selections{
-    display: flex;
-    justify-content: center;
-  }
+header {
+  flex-basis: 100%;
+}
 
+.add-blog {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 3%;
+}
+
+.blogs-display {
+  padding: 3%;
+  /* margin-left: 10px; */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.blogs-display>h1 {
+  margin-bottom: 30px;
+}
+
+.blog-item {
+  margin: 10px 0px;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-selections {
+  display: flex;
+  justify-content: center;
+}

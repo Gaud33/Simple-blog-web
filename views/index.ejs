@@ -1,15 +1,21 @@
 <%- include("partials/header.ejs") %>
+    <!-- Left side navigation bar -->
+    <div class="left-nav">
+        
+    </div>
 
-<div class = "container">
-    <div class="row">
+    <div class="row site-content">
         <div class = "col-md-8 col-sm=10 add-blog">
             <h1 >Add Your Blog</h1>
             <form  action="/" method = "POST">
+                <div class = "Fields">
                 <label for="title">Title:</label>
                 <input type="text" name = "title"> 
                 <label for="content">Content</label>
                 <input type="text" name="content">
                 <input type="submit" value = "Submit">
+                </div>
+                
             </form>
         </div>
         <div class="col-10 blogs-display">
@@ -33,6 +39,7 @@
         </div>
     </div>
     
-</div>
+   
+
 
 <%- include("partials/footer.ejs")%>
