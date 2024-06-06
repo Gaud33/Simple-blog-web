@@ -24,11 +24,12 @@
 
                 <!-- Add sections for each blog item  -->
                 <% for(let i = 0; i< head.length; i++){ %>
-                    <div class = "blog-item"> 
-                        <h2 class ="blog-header"> <%= head[i] %> </h2>
-                        <p class = "blog-content">  <%= text[i] %>  </p>
-                    </div>
-
+                     <% if (head[i]){ %>
+                        <div class = "blog-item"> 
+                            <h2 class ="blog-header"> <%= head[i] %> </h2>
+                            <p class = "blog-content">  <%= text[i] %>  </p>
+                        </div>
+                    <% } %>
                  <% } %>
 
             <% } else {  %>
